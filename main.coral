@@ -13,7 +13,10 @@ Function Main() returns nothing
    integer hottestIndex
 
    // fill temperatures array with values from user input
+   for i = 0; i < temperatures.size; i = i + 1
+      temperatures[i] = Get next input
 
+   // sends the values to the subfunctions
    coldestIndex = ColdestTemp(temperatures)
    hottestIndex = HottestTemp(temperatures)
 
@@ -64,7 +67,12 @@ Function Main() returns nothing
 
 Function HottestTemp(integer array(7) temps) returns integer maxIndex
    // This function should take an array of integers and return the index of the highest
-
+   integer i
+   maxIndex = 0
+   // for each temperature in the array, compare its value to the value at the index stored in maxIndex
+   for i = 0; i < temps.size; i = i + 1
+      if temps[i] > temps[maxIndex]
+         maxIndex = i
 
 Function ColdestTemp(integer array(7) temps) returns integer minIndex
    // This function should take an array of integers and return the index of the lowest
