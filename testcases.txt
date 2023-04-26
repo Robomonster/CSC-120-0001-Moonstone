@@ -1,0 +1,40 @@
+[Test case 1]
+Description: regular temperatures as input
+Input: 56 57 58 59 60 61 62
+Expected output:
+    The coldest day is Sunday at 56°
+    The hottest day is Saturday at 62°
+
+[Test case 2]
+Description: two of the same temperature as input
+Input: 56 56 58 59 60 61 62
+Expected output:
+    The coldest day is Sunday at 56°
+    The hottest day is Saturday at 62°
+
+[Test case 3]
+Description: large range of random temperatures as input
+Input: 78 95 64 53 12 45 82
+Expected output:
+    The coldest day is Thursday at 12°
+    The hottest day is Monday at 95°
+
+[Test case 4]
+Description: a negative temperature as opne of the inputs
+Input: 78 95 64 53 -12 45 82
+Expected output:
+    The coldest day is Thursday at -12°
+    The hottest day is Monday at 95°
+
+[Test case 5]
+Description: 10 inputs
+Input: 78 95 64 53 -12 45 82 92 102 112
+Expected output:
+    The coldest day is Thursday at -12°
+    The hottest day is Monday at 95°
+
+[Test case 6]
+Description: 3 inputs
+Input: 78 95 64
+Expected output: None, this should cause an error
+Error: Program is trying to get next input, but all input values have already been gotten.
